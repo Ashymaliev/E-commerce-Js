@@ -13,80 +13,118 @@
     display: flex;
     justify-content: space-between;
     padding: 65px 0;
-}
-
-&__bottom{
+  }
+  &__bottom{
     display: flex;
-}
+  }
 
-&__searchbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-&__form{
-    background: #F9F9F9;
-    border: 1px solid #D1D1D1;
-    box-sizing: border-box;
-    border-radius: 13px;
-}
-
-&__logo{
+  &__logo{
     display: flex;
 }
 }
 
 .logo{
-   padding: 0 20px;
-   position: relative;
-}
+    padding: 0 20px;
+    position: relative;
+ }
+    
+ .number{
+     font-family: Poppins;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 13px;
+     line-height: 18px;
+     color: #FFFFFF;
+     position: absolute;
+     bottom: -5px;
+     left: 14px;
+     padding: 1px 4px; 
+     background: #E6704B;
+     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 12px;
+ }
+ 
+ ul{
+     display: flex;
+ }
+ 
+ .contact__list{
+     padding:  16px;
+     font-family: Open Sans;
+     font-size: 13px;
+     line-height: 16px;
+ 
+     &-green a {
+         padding:  16px;
+         font-family: Open Sans;
+         font-size: 13px;
+         line-height: 16px;
+         color: #6A983C;
+ 
+     }
+ }
+ 
+   .nav__links a{
+       padding:  16px;
+       font-family: Open Sans;
+       font-size: 13px;
+         line-height: 16px;
+       color: #6A983C;
+       
+    }
+ 
+    .select{
+        padding: 10px 16px;
+    }
 
-.number{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-    position: absolute;
-    bottom: -1px;
-    left: 14px;
-    padding: 1px 4px; 
-    background: #E6704B;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
-}
-
-ul{
+.search-bar{
+    padding: 10px 16px;
     display: flex;
-}
+    align-items: center;
+    background: #F9F9F9;
+    max-height: 42px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
 
-.contact__list{
-    padding:  16px;
-    font-family: Open Sans;
-    font-size: 13px;
-    line-height: 16px;
+    &__title{
+        font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 22px;
+    }
+    &__list{
+        max-height: 23px;
+    }
 
-    &-green a {
-        padding:  16px;
-        font-family: Open Sans;
-        font-size: 13px;
-        line-height: 16px;
-        color: #6A983C;
-
+    &__input{
+        padding-left: 24px;
+        margin-left: 24px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-left: 2px solid;
     }
 }
 
-  .nav__links a{
-      padding:  16px;
-      font-family: Open Sans;
-      font-size: 13px;
-        line-height: 16px;
-      color: #6A983C;
-      
-   }
 
+   .dropdown{
+       &__wrapper{
+           display: flex;
+           background: #F9F9F9;
+           padding: 16px 0;
+       }
 
-   .select{
-       padding: 10px 16px;
+       &__title{
+          margin-right: 54px;
+          position: relative;
+       }
+
+       &__list{
+           position: absolute;
+           display: none;
+           &is-active{
+               display: block;
+           }
+       }
    }
