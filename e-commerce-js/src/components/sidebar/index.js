@@ -1,0 +1,1 @@
+const Sidebar = (title, listItems, bittinsText)

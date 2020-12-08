@@ -40,6 +40,20 @@ img {
   padding: 16px 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #f9f9f9;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .header__middle {
@@ -47,10 +61,36 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 
 .header__bottom {
   background-color: #f9f9f9;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .contact {
@@ -124,6 +164,19 @@ img {
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
+  animation: pulsing 4s infinite;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.7, 0.7);
+  }
 }
 
 .search-bar {
@@ -219,6 +272,7 @@ img {
   font-family: "Open Sans", sans-serif, sans-serif;
   line-height: 19px;
   font-style: normal;
+  cursor: pointer;
   padding: 3px 0 3px 24px;
   margin-left: 48px;
   border: none;
@@ -247,6 +301,19 @@ img {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+  animation: pulsing 4s infinite;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.7, 0.7);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.7, 0.7);
+  }
 }
 
 .search-bar__btn img {
@@ -322,4 +389,18 @@ img {
 
 .dropdown__list.is-active {
   display: block;
+  animation: fading 0.3s forwards;
+}
+
+@keyframes fading {
+  from {
+    height: 0;
+  }
+  to {
+    height: 40px;
+  }
+}
+
+.dropdown__list:hover {
+  background-color: #6a983c;
 }

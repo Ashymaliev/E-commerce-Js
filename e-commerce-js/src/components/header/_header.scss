@@ -3,16 +3,59 @@
 		padding: 16px 0;
 		display: flex;
 		justify-content: space-between;
-		// border-bottom: 2px solid $color-lightGray;
+		border-bottom: 2px solid $color-lightGray;
+		animation-duration: 3s;
+		animation-name: slidein;
+		// animation-iteration-count: infinite;
+		@keyframes slidein {
+			from {
+			  margin-left: 100%;
+			  width: 300%; 
+			}
+		  
+			to {
+			  margin-left: 0%;
+			  width: 100%;
+			}
+		  }
 	}
 	&__middle {
 		padding: 44px 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		animation-duration: 3s;
+		animation-name: slidein;
+		@keyframes slidein {
+			from {
+			  margin-right: 100%;
+			  width: 300%; 
+			}
+		  
+			to {
+			  margin-right: 0%;
+			  width: 100%;
+			}
+		  }
+		
 	}
 	&__bottom {
 		background-color: $color-lightGray;
+		animation-duration: 3s;
+		animation-name: slidein;
+		// animation-iteration-count: infinite;
+		@keyframes slidein {
+			from {
+			  margin-left: 100%;
+			  width: 300%; 
+			}
+		  
+			to {
+			  margin-left: 0%;
+			  width: 100%;
+			}
+		  }
 	}
 
 
@@ -70,12 +113,45 @@
 		left: -4px;
 		background-color: $color-red;
 		border-radius: 12px;
-		padding: 1px 4px;
-		
+		padding: 1px 4px;	
         font-weight: 1.5;
         font-size: 12px;
         line-height: 18px;
-        color: #FFFFFF;
+		color: #FFFFFF;
+		
+		//___________ ANIMATION
+
+		-webkit-animation: pulsing 4s infinite;
+		animation: pulsing 4s infinite;
+		@-webkit-keyframes pulsing {
+			0% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7)
+			}
+			50% {
+			  -webkit-transform: scale(1.0, 1.0);
+			  transform: scale(1.0, 1.0);
+			}
+			100% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7);
+			}
+		  }
+		  
+		  @keyframes pulsing {
+			0% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7)
+			}
+			50% {
+			  -webkit-transform: scale(1.0, 1.0);
+			  transform: scale(1.0, 1.0);
+			}
+			100% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7);
+			}
+		  }
 	}
 }
 .search-bar {
@@ -149,6 +225,7 @@
 	}
 	&__input {
 		@include font(14px, 400, 19px, $font-openSans);
+		cursor: pointer;
 		padding: 3px 0 3px 24px;
 		margin-left: 48px;
 		border: none;
@@ -169,6 +246,41 @@
 		outline: none;
 		background-color: transparent;
 		cursor: pointer;
+
+//___________ ANIMATION
+
+		-webkit-animation: pulsing 4s infinite;
+		animation: pulsing 4s infinite;
+		@-webkit-keyframes pulsing {
+			0% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7)
+			}
+			50% {
+			  -webkit-transform: scale(1.0, 1.0);
+			  transform: scale(1.0, 1.0);
+			}
+			100% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7);
+			}
+		  }
+		  
+		  @keyframes pulsing {
+			0% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7)
+			}
+			50% {
+			  -webkit-transform: scale(1.0, 1.0);
+			  transform: scale(1.0, 1.0);
+			}
+			100% {
+			  -webkit-transform: scale(0.7, 0.7);
+			  transform: scale(0.7, 0.7);
+			}
+		  }
+
 		img {
 			transition: 0.3s;
 		}
@@ -177,6 +289,8 @@
 				transform: rotate(-90deg);
 			}
 		}
+
+
 	}
 }
 
@@ -226,12 +340,27 @@
 				transform: rotate(180deg) translateY(50%);
 			}
 		}
+		
 	}
 	&__list {
 		display: none;
 		position: absolute;
 		&.is-active {
 			display: block;
+				animation: fading 0.3s forwards;
+				@keyframes fading {
+					from {
+						height: 0;
+					}
+					to {
+						height: 40px;
+					}
+
+				}
 		}
+		&:hover {
+			background-color: $color-green;
+		}
+
 	}
 }
