@@ -34,3 +34,20 @@ img {
 	max-width: 100%;
 }
 
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-9 {
+	width: 75%;
+}

@@ -14,7 +14,7 @@ const DropDowns = (title) => {
     const h3 = document.createElement('h3');
     h3.className = 'dropdown__title';
     h3.innerHTML = `${item}
-    <img src="./images/icon-arrow.svg" alt="icon-arrow">
+    <img src="./src/images/icon-arrow.svg" alt="icon-arrow">
 			<ul class="dropdown__list">
 				<li>${item}</li>
 				<li>${item}</li>

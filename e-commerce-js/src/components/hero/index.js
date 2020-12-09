@@ -1,5 +1,6 @@
-import Sidebar from '../sidebar/index.js';
+import Sidebar from '../sidebar/index.js'
 import { titleOfSidebar, listItemsOfSidebar, btnTextOfSidebar } from './const.js';
+import Banner from './banner.js';
 
 const Hero = () => {
   const heroSection = document.createElement('section');

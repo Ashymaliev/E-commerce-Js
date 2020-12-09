@@ -27,5 +27,4 @@ const Sidebar = (title, listItems, buttonText) => {
       `;
     return aside.outerHTML;
   };
-  
   export default Sidebar;
