@@ -13,3 +13,5 @@ const root = () => {
   document.body.append(rootDiv);
   return rootDiv;
 };
+
+root()
