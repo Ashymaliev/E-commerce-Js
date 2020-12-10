@@ -1,14 +1,14 @@
+
 @mixin font($size, $weight, $line: 1, $family: "Poppins") {
-   
-    font-size: $size;
-    font-weight: $weight;
-    font-family: $family, sans-serif;
-    line-height: $line;
-    font-style: normal;
+	font-size: $size;
+	font-weight: $weight;
+	font-family: $family, sans-serif;
+	line-height: $line;
+	font-style: normal;
 }
 
-@mixin flex-center() {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin flex-center($justify: center) {
+	display: flex;
+	align-items: center;
+	justify-content: $justify;
 }
