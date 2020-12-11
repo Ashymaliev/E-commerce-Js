@@ -20,7 +20,7 @@ const Banner = (imgSrc) => {
     h3.innerText = 'Tomato foccacia'
     a.innerText = `
     Read recepies
-    <span>&rsaquo</span>`;
+    <span>&rsaquo;</span>`;
    
     imgWrapper.appendChild(img);
     div.append(h6);

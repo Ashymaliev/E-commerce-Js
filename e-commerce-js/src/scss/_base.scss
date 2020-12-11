@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -14,14 +19,11 @@ body{
 
 li{
     cursor: pointer;
-    display: flex;
-    text-decoration: none;
     list-style: none;
 }
 
 a{
     cursor: pointer;
-    color: black;
     display: inline-block;
 	text-decoration: none;
 }
@@ -44,10 +46,18 @@ img {
 	width: 25%;
 }
 
+.col-4 {
+	width: 33.33%;
+}
+
 .col-6 {
     width: 50%;
 }
 
 .col-9 {
 	width: 75%;
+}
+
+.pt-120 {
+	padding-top: 120px;
 }
