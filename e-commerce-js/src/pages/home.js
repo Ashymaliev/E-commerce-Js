@@ -1,6 +1,6 @@
 import Hero from '../components/hero/index.js';
 import Reviews from '../components/reviews/index.js';
-import Headline from '../components/headline/index.js';
+import Headline from '../components/headeline/index.js';
 import { reviewsData } from '../components/reviews/const.js';
 
 const Home = () => {

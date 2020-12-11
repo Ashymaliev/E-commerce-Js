@@ -1,4 +1,4 @@
-const Munarbek = () => {
+const Nursultan = () => {
     const p = document.querySelectorAll('.product__description');
     p.forEach((item, index) => {
       const arrayOfLetters = item.textContent.split('');
@@ -43,4 +43,4 @@ const Munarbek = () => {
     });
   };
   
-  export default Munarbek;
+  export default Nursultan;
